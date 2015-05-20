@@ -1,0 +1,16 @@
+apply plugin: 'war' 
+apply plugin: 'jetty' 
+
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+	compile 'javax.servlet:servlet-api:2.5'
+
+}
+
+task setContext{
+	jettyRun.contextPath='';
+}
